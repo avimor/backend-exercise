@@ -1,0 +1,14 @@
+version: "3"
+services:
+  app-01:
+    image: avim/backend-exercise
+    ports:
+      - "80:9000"
+  app-02:
+    image: avim/backend-exercise
+    ports:
+      - "8080:9000"
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
